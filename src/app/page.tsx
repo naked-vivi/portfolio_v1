@@ -131,7 +131,7 @@ export default function Page() {
                         <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" aria-hidden />
                       </div>
                       <div className="font-sans text-sm text-muted-foreground">
-                        {education.degree}
+                        {education.degree} · GPA: {education.gpa}
                       </div>
                     </div>
                   </div>

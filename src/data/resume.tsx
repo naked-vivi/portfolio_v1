@@ -82,8 +82,8 @@ export const DATA = {
       location: "Thailand",
       title: "Solution Engineer Intern",
       logoUrl: "/logos/botnoi.svg",
-      start: "January 2026",
-      end: "April 2026",
+      start: "Jan 2026",
+      end: "Apr 2026",
       description:
         "Designed conversation flows and developed chatbots and voicebots to meet customer needs and create engaging user experiences. Focused on clear dialogue, smooth interactions, and helpful responses to make conversations intuitive and effective.",
     },
@@ -92,10 +92,11 @@ export const DATA = {
     {
       school: "Mae Fah Luang University",
       href: "https://www.mfu.ac.th",
-      degree: "Bachelor's Degree in Software Engineering",
+      degree: "B.Eng. Software Engineering",
+      gpa: "3.8",
       logoUrl: "/logos/mfu.svg",
-      start: "2022",
-      end: "2026",
+      start: "Aug 2022",
+      end: "May 2026",
     },
   ],
   projects: [
