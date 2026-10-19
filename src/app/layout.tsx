@@ -24,13 +24,25 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   applicationName: DATA.name,
-  manifest: "/favicons/default/site.webmanifest",
+  manifest: "/favicons/vivian/site.webmanifest",
   icons: {
     icon: [
-      { url: "/favicons/default/favicon.svg?v=2", type: "image/svg+xml" },
-      { url: "/favicons/default/favicon-96x96.png?v=2", type: "image/png", sizes: "96x96" },
+      { url: "/favicon.ico", type: "image/x-icon", sizes: "any" },
+      { url: "/favicons/vivian/favicon.svg", type: "image/svg+xml" },
+      {
+        url: "/favicons/vivian/favicon-96x96.png",
+        type: "image/png",
+        sizes: "96x96",
+      },
     ],
-    apple: [{ url: "/favicons/default/apple-touch-icon.png?v=2", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicons/vivian/favicon.ico",
+    apple: [
+      {
+        url: "/favicons/vivian/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
   title: {
     default: DATA.name,
