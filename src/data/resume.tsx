@@ -6,6 +6,24 @@ import { TanstackQuery } from "@/components/ui/svgs/tanstackQuery";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
+import { Docker } from "@/components/ui/svgs/docker";
+import { Kubernetes } from "@/components/ui/svgs/kubernetes";
+import { Nodejs } from "@/components/ui/svgs/nodejs";
+import { Postgresql } from "@/components/ui/svgs/postgresql";
+import {
+  ClaudeCode,
+  Cloudflare,
+  Drizzle,
+  Expressjs,
+  MagicUi,
+  MongoDB,
+  Mongoose,
+  Prisma,
+  Redis,
+  Redux,
+  Vercel,
+  Zustand,
+} from "@/components/ui/svgs/brand-icons";
 
 export const DATA = {
   name: "Vivian ~ Front-End Developer",
@@ -19,16 +37,46 @@ export const DATA = {
     "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [earned certificates in responsive web design and AI](/#certificates). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/favicons/default/web-app-manifest-512x512.png",
   skills: [
+    // Languages and runtimes
+    { name: "TypeScript", icon: Typescript },
+    { name: "Node.js", icon: Nodejs },
+
+    // Frameworks and UI
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
-    { name: "TypeScript", icon: Typescript },
+    { name: "Express.js", icon: Expressjs },
+    { name: "Tailwind CSS", icon: Icons.tailwindcss },
+    { name: "shadcn/ui", icon: Icons.shadcn },
+    { name: "Magic UI", icon: MagicUi },
+
+    // State management and data tools
+    { name: "Redux", icon: Redux },
+    { name: "Zustand", icon: Zustand },
     { name: "TanStack Query", icon: TanstackQuery },
     { name: "Zod", icon: Zod },
-    { name: "shadcn/ui", icon: Icons.shadcn },
-    { name: "Tailwind CSS", icon: Icons.tailwindcss },
+
+    // Databases and backend services
+    { name: "PostgreSQL", icon: Postgresql },
+    { name: "MongoDB", icon: MongoDB },
+    { name: "Redis", icon: Redis },
     { name: "Supabase", icon: Icons.supabase },
+
+    // ORMs and ODMs
+    { name: "Prisma", icon: Prisma },
+    { name: "Drizzle", icon: Drizzle },
+    { name: "Mongoose", icon: Mongoose },
+
+    // Infrastructure and deployment
+    { name: "Docker", icon: Docker },
+    { name: "Kubernetes", icon: Kubernetes },
+    { name: "Cloudflare", icon: Cloudflare },
+    { name: "Vercel", icon: Vercel },
+
+    // Design and developer tools
+    { name: "Figma", icon: Icons.figma },
     { name: "Git", icon: Git },
     { name: "Codex", icon: Icons.openai },
+    { name: "Claude Code", icon: ClaudeCode },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -112,7 +160,14 @@ export const DATA = {
       dates: "",
       description:
         "A cabin booking website with Google sign-in, availability filters, and detailed stay pages. Combines Next.js rendering strategies with Supabase for fast browsing and a smooth booking experience.",
-      technologies: ["React", "Next.js", "Tailwind CSS", "Supabase", "NextAuth", "Framer Motion"],
+      technologies: [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Supabase",
+        "NextAuth",
+        "Framer Motion",
+      ],
       links: [
         {
           type: "Website",
@@ -134,7 +189,14 @@ export const DATA = {
       dates: "",
       description:
         "A hotel management dashboard for bookings, check-ins, cabins, and guest records. Features role-based access, filtering, pagination, and charts for revenue and occupancy, with React Query caching to keep data fresh.",
-      technologies: ["React", "Supabase", "React Query", "shadcn/ui", "Tailwind CSS", "Recharts"],
+      technologies: [
+        "React",
+        "Supabase",
+        "React Query",
+        "shadcn/ui",
+        "Tailwind CSS",
+        "Recharts",
+      ],
       links: [
         {
           type: "Website",
@@ -156,7 +218,13 @@ export const DATA = {
       dates: "",
       description:
         "A pizza ordering app with menu browsing, order customization, and quantity controls. Integrates an ordering API for live pricing and delivery tracking, with Redux managing application state.",
-      technologies: ["React", "React Router", "Redux", "TypeScript", "API Integration"],
+      technologies: [
+        "React",
+        "React Router",
+        "Redux",
+        "TypeScript",
+        "API Integration",
+      ],
       links: [
         {
           type: "Website",
@@ -178,7 +246,13 @@ export const DATA = {
       dates: "",
       description:
         "A timed quiz with 15 random React questions, a 30 second limit per question, and a final score when the session ends. Uses Context API and useReducer to manage quiz state, with local storage for persistence.",
-      technologies: ["React", "TypeScript", "Context API", "useReducer", "Local Storage"],
+      technologies: [
+        "React",
+        "TypeScript",
+        "Context API",
+        "useReducer",
+        "Local Storage",
+      ],
       links: [
         {
           type: "Website",
