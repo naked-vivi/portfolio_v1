@@ -113,17 +113,17 @@ export default function Page() {
                   href={education.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-x-3 justify-between group"
+                  className="group flex items-start justify-between gap-x-3 sm:items-center"
                 >
-                  <div className="flex items-center gap-x-3 flex-1 min-w-0">
+                  <div className="flex min-w-0 flex-1 items-start gap-x-3 sm:items-center">
                     {education.logoUrl ? (
                       <img
                         src={education.logoUrl}
                         alt={education.school}
-                        className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
+                        className="size-10 sm:size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
                       />
                     ) : (
-                      <div className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border bg-muted flex-none" />
+                      <div className="size-10 sm:size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border bg-muted flex-none" />
                     )}
                     <div className="flex-1 min-w-0 flex flex-col gap-0.5">
                       <div className="font-semibold leading-none flex items-center gap-2">
@@ -133,9 +133,12 @@ export default function Page() {
                       <div className="font-sans text-sm text-muted-foreground">
                         {education.degree} · GPA: {education.gpa}
                       </div>
+                      <div className="text-xs tabular-nums text-muted-foreground sm:hidden">
+                        {education.start} - {education.end}
+                      </div>
                     </div>
                   </div>
-                  <div className="flex items-center gap-1 text-xs tabular-nums text-muted-foreground text-right flex-none">
+                  <div className="hidden items-center gap-1 text-right text-xs tabular-nums text-muted-foreground sm:flex sm:flex-none">
                     <span>
                       {education.start} - {education.end}
                     </span>

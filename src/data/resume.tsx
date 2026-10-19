@@ -57,12 +57,18 @@ export const DATA = {
         url: "https://www.instagram.com/nakedvivii/",
         icon: Icons.instagram,
 
-        navbar: true,
+        navbar: false,
       },
       TikTok: {
         name: "TikTok",
         url: "https://www.tiktok.com/@nakedvivii",
         icon: Icons.tiktok,
+        navbar: false,
+      },
+      LINE: {
+        name: "LINE",
+        url: "https://line.me/ti/p/~niea_ofethan",
+        icon: Icons.line,
         navbar: true,
       },
       email: {

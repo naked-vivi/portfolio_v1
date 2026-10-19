@@ -5,6 +5,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Live Preview](#live-preview)
 - [Features](#features)
 - [Get Started](#get-started)
 - [License](#license)
@@ -12,6 +13,12 @@
 ## Introduction
 
 My personal portfolio as a junior frontend developer, built with Next.js, React, TypeScript, and Tailwind CSS. It brings together my skills, work experience, education, projects, and certificates in a simple, responsive design with shadcn/ui, Magic UI, and Motion animations.
+
+## Live Preview
+
+Visit the live portfolio at [vivianaein.dev](https://vivianaein.dev).
+
+The portfolio is deployed and hosted on Cloudflare Workers.
 
 ## Features
 
@@ -21,7 +28,7 @@ My personal portfolio as a junior frontend developer, built with Next.js, React,
 - **Smooth Animations**: Animated section entrances, dock magnification, and a scroll-to-top button.
 - **Project Showcase**: Project cards with previews, technologies, and links to demos and source code.
 - **Certificates**: Course descriptions and direct links to credentials from freeCodeCamp and Coursera.
-- **Social Dock**: Quick access to my GitHub, LinkedIn, Instagram, and TikTok profiles.
+- **Social Dock**: Quick access to my GitHub, LinkedIn, and LINE profiles.
 
 ## Get Started
 

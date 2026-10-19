@@ -16,7 +16,7 @@ function LogoImage({ src, alt }: { src: string; alt: string }) {
 
   if (!src || imageError) {
     return (
-      <div className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border bg-muted flex-none" />
+      <div className="size-10 sm:size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border bg-muted flex-none" />
     );
   }
 
@@ -24,7 +24,7 @@ function LogoImage({ src, alt }: { src: string; alt: string }) {
     <img
       src={src}
       alt={alt}
-      className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
+      className="size-10 sm:size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
       onError={() => setImageError(true)}
     />
   );
@@ -40,8 +40,8 @@ export default function WorkSection() {
           className="w-full border-b-0 grid gap-2"
         >
           <AccordionTrigger className="hover:no-underline p-0 cursor-pointer transition-colors rounded-none group [&>svg]:hidden">
-            <div className="flex items-center gap-x-3 justify-between w-full text-left">
-              <div className="flex items-center gap-x-3 flex-1 min-w-0">
+            <div className="flex w-full items-start justify-between gap-x-3 text-left sm:items-center">
+              <div className="flex min-w-0 flex-1 items-start gap-x-3 sm:items-center">
                 <LogoImage src={work.logoUrl} alt={work.company} />
                 <div className="flex-1 min-w-0 gap-0.5 flex flex-col">
                   <div className="font-semibold leading-none flex items-center gap-2">
@@ -67,9 +67,12 @@ export default function WorkSection() {
                   <div className="font-sans text-sm text-muted-foreground">
                     {work.title}
                   </div>
+                  <div className="text-xs tabular-nums text-muted-foreground sm:hidden">
+                    {work.start} - {work.end ?? "Present"}
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center gap-1 text-xs tabular-nums text-muted-foreground text-right flex-none">
+              <div className="hidden items-center gap-1 text-right text-xs tabular-nums text-muted-foreground sm:flex sm:flex-none">
                 <span>
                   {work.start} - {work.end ?? "Present"}
                 </span>
