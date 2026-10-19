@@ -16,9 +16,7 @@ My personal portfolio as a junior frontend developer, built with Next.js, React,
 
 ## Live Preview
 
-Visit the live portfolio at [vivianaein.dev](https://vivianaein.dev).
-
-The portfolio is deployed and hosted on Cloudflare Workers.
+Visit the live portfolio at [vivianaein.dev](https://vivianaein.dev) and hosted on Cloudflare Workers.
 
 ## Features
 
