@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { Highlighter } from "@/components/magicui/highlighter";
 import HeroMascot from "@/components/hero-mascot";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
@@ -13,7 +14,29 @@ import { ArrowUpRight } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
 
+const HERO_HIGHLIGHT_ALTERNATE = [
+  {
+    action: "underline" as const,
+    color: "#a855f7", // purple
+    strokeWidth: 2.5,
+    padding: 1,
+    iterations: 2,
+    textClassName: "text-foreground font-semibold dark:text-zinc-100",
+  },
+  {
+    action: "highlight" as const,
+    color: "#fde68a", // previous light yellow color
+    strokeWidth: 1.5,
+    padding: 2,
+    iterations: 1,
+    textClassName: "text-zinc-950 font-semibold",
+  },
+];
+
 export default function Page() {
+  const role = "junior frontend developer";
+  const roleIndex = DATA.description.indexOf(role);
+
   return (
     <main className="min-h-dvh flex flex-col gap-14 relative">
       <section id="hero">
@@ -30,7 +53,20 @@ export default function Page() {
                 className="text-muted-foreground max-w-150 md:text-lg lg:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
-              />
+              >
+                {roleIndex >= 0 ? (
+                  <>
+                    {DATA.description.slice(0, roleIndex)}
+                    <Highlighter
+                      alternate={HERO_HIGHLIGHT_ALTERNATE}
+                      isView
+                    >
+                      <span className="px-1 font-semibold">{role}</span>
+                    </Highlighter>
+                    {DATA.description.slice(roleIndex + role.length)}
+                  </>
+                ) : DATA.description}
+              </BlurFadeText>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="shrink-0 order-1 md:order-2">
               <HeroMascot />
