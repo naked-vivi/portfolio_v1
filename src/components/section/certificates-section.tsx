@@ -22,8 +22,8 @@ export default function CertificatesSection() {
             </h2>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
               I keep growing my skills through practical courses and hands-on learning.
-              These certificates reflect my progress in responsive web design and
-              using AI thoughtfully in everyday work.
+              Each certificate is a step toward becoming a more confident developer
+              and preparing for new opportunities in my career.
             </p>
           </div>
         </div>
