@@ -8,7 +8,7 @@ import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
 
 export const DATA = {
-  name: "Vivian",
+  name: "Vivian ~ Front-End Developer",
   initials: "V",
   url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   location: "San Francisco, CA",
