@@ -1,5 +1,8 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon } from "lucide-react";
+import { FileText, HomeIcon } from "lucide-react";
+import { Zod } from "@/components/ui/svgs/zod";
+import { Git } from "@/components/ui/svgs/git";
+import { TanstackQuery } from "@/components/ui/svgs/tanstackQuery";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
@@ -19,18 +22,20 @@ export const DATA = {
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
     { name: "TypeScript", icon: Typescript },
-    { name: "TanStack Query", icon: Icons.tanstackquery },
-    { name: "Tailwind CSS", icon: Icons.tailwindcss },
+    { name: "TanStack Query", icon: TanstackQuery },
+    { name: "Zod", icon: Zod },
     { name: "shadcn/ui", icon: Icons.shadcn },
+    { name: "Tailwind CSS", icon: Icons.tailwindcss },
     { name: "Supabase", icon: Icons.supabase },
-    { name: "Figma", icon: Icons.figma },
+    { name: "Git", icon: Git },
     { name: "Codex", icon: Icons.openai },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "#", icon: FileText, label: "Resume" },
   ],
   contact: {
-    email: "hello@example.com",
+    email: "pyaephyoeaein@gmail.com",
     tel: "+123456789",
     social: {
       GitHub: {
@@ -62,7 +67,7 @@ export const DATA = {
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:pyaephyoeaein@gmail.com",
         icon: Icons.email,
 
         navbar: false,
@@ -95,126 +100,92 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
-      active: true,
+      title: "TWO Web",
+      href: "https://github.com/naked-vivi/the-wild-oasis-website",
+      dates: "",
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
+        "A cabin booking website with Google sign-in, availability filters, and detailed stay pages. Combines Next.js rendering strategies with Supabase for fast browsing and a smooth booking experience.",
+      technologies: ["React", "Next.js", "Tailwind CSS", "Supabase", "NextAuth", "Framer Motion"],
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
-    },
-    {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
+          href: "https://github.com/naked-vivi/the-wild-oasis-website",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/naked-vivi/the-wild-oasis-website",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/placeholder.svg",
+      video: "",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: true,
+      title: "TWO Dashboard",
+      href: "https://github.com/naked-vivi/the-wild-oasis",
+      dates: "",
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
+        "A hotel management dashboard for bookings, check-ins, cabins, and guest records. Features role-based access, filtering, pagination, and charts for revenue and occupancy, with React Query caching to keep data fresh.",
+      technologies: ["React", "Supabase", "React Query", "shadcn/ui", "Tailwind CSS", "Recharts"],
       links: [
         {
           type: "Website",
-          href: "https://llm.report",
+          href: "https://github.com/naked-vivi/the-wild-oasis",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          href: "https://github.com/naked-vivi/the-wild-oasis",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      image: "/placeholder.svg",
+      video: "",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
+      title: "Fast React Pizza",
+      href: "https://github.com/naked-vivi/fast-pizza",
+      dates: "",
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
+        "A pizza ordering app with menu browsing, order customization, and quantity controls. Integrates an ordering API for live pricing and delivery tracking, with Redux managing application state.",
+      technologies: ["React", "React Router", "Redux", "Tailwind CSS", "TypeScript", "API Integration"],
       links: [
         {
           type: "Website",
-          href: "https://automatic.chat",
+          href: "https://github.com/naked-vivi/fast-pizza",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Source",
+          href: "https://github.com/naked-vivi/fast-pizza",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      image: "/placeholder.svg",
+      video: "",
+    },
+    {
+      title: "React Quiz",
+      href: "https://github.com/naked-vivi/react-quiz",
+      dates: "",
+      description:
+        "A timed quiz with 15 random React questions, a 30 second limit per question, and a final score when the session ends. Uses Context API and useReducer to manage quiz state, with local storage for persistence.",
+      technologies: ["React", "TypeScript", "Context API", "useReducer", "Local Storage"],
+      links: [
+        {
+          type: "Website",
+          href: "https://github.com/naked-vivi/react-quiz",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/naked-vivi/react-quiz",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/placeholder.svg",
+      video: "",
     },
   ],
   certificates: [

@@ -5,15 +5,6 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 export const Icons = {
   globe: (props: IconProps) => <GlobeIcon {...props} />,
   email: (props: IconProps) => <MailIcon {...props} />,
-  tanstackquery: (props: IconProps) => (
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <title>TanStack Query</title>
-      <ellipse cx="12" cy="12" rx="10" ry="4" stroke="#FF4154" strokeWidth="2" />
-      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)" stroke="#F97316" strokeWidth="2" />
-      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)" stroke="#FACC15" strokeWidth="2" />
-      <circle cx="12" cy="12" r="2.5" fill="#FF4154" />
-    </svg>
-  ),
   shadcn: (props: IconProps) => (
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
       <title>shadcn/ui</title>
@@ -121,7 +112,7 @@ export const Icons = {
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       className="size-8"
-      fill="currentColor"
+      fill="#06B6D4"
       {...props}
     >
       <title>Tailwind CSS</title>
