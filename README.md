@@ -1,17 +1,57 @@
-# Vivian's Portfolio
+# Vivian's Minimalist Portfolio
 
-A personal portfolio for Vivian, a junior frontend developer. Built with Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, and Magic UI.
+![Preview of Vivian's portfolio](./public/preview.png)
 
-## Run locally
+## Table of Contents
 
-```sh
-npm ci
-npm run dev
-```
+- [Introduction](#introduction)
+- [Features](#features)
+- [Get Started](#get-started)
+- [License](#license)
 
-Open http://localhost:3000. Alternatively, use `pnpm install --frozen-lockfile` and `pnpm dev`.
+## Introduction
 
-## Check and build
+My personal portfolio as a junior frontend developer, built with Next.js, React, TypeScript, and Tailwind CSS. It brings together my skills, work experience, education, projects, and certificates in a simple, responsive design with shadcn/ui, Magic UI, and Motion animations.
+
+## Features
+
+- **Responsive Layout**: Designed for desktop, tablet, and mobile screens.
+- **Interactive Mascot**: A character that follows the cursor and reacts when clicked.
+- **Light and Dark Themes**: Switch themes from the navigation dock.
+- **Smooth Animations**: Animated section entrances, dock magnification, and a scroll-to-top button.
+- **Project Showcase**: Project cards with previews, technologies, and links to demos and source code.
+- **Certificates**: Course descriptions and direct links to credentials from freeCodeCamp and Coursera.
+- **Social Dock**: Quick access to my GitHub, LinkedIn, Instagram, and TikTok profiles.
+
+## Get Started
+
+1. **Clone the repository**
+
+   ```sh
+   git clone https://github.com/naked-vivi/portfolio_v1.git
+   ```
+
+2. **Go to the project folder**
+
+   ```sh
+   cd portfolio_v1
+   ```
+
+3. **Install dependencies**
+
+   ```sh
+   npm ci
+   ```
+
+4. **Run the development server**
+
+   ```sh
+   npm run dev
+   ```
+
+5. **Open [http://localhost:3000](http://localhost:3000)** in your browser.
+
+Run the checks and create a production build with:
 
 ```sh
 npm run lint
@@ -20,20 +60,6 @@ npm run build
 npm start
 ```
 
-## Customize
+## License
 
-- `src/data/resume.tsx`: profile, social links, skills, experience, education, projects, and hackathons.
-- `src/app/page.tsx`: homepage sections and hero content.
-- `src/app/globals.css`: theme colors and shared styles.
-- `src/components/navbar.tsx`: dock navigation.
-- `public/mascots`: interactive mascot sprite sheets.
-- `public`: company and university logos, favicon images, and web app manifest.
-- `src/app/favicon.ico`: browser favicon fallback.
-
-Set `NEXT_PUBLIC_SITE_URL` to the deployed site's full URL before building so canonical metadata uses the production domain. Local development defaults to http://localhost:3000.
-
-The hero uses the page-mascot glasses character. The dock includes Vivian's GitHub, LinkedIn, Instagram, and TikTok profiles, plus a theme toggle. A scroll-to-top button appears after scrolling.
-
-## Credits
-
-Based on [Dillion Verma's Magic UI portfolio template](https://github.com/dillionverma/portfolio). Interactive mascot provided by [page-mascot](https://github.com/nilbuild/page-mascot); its license is included in `public/mascots/LICENSE.txt`.
+This project is licensed under the [MIT License](./LICENSE).
