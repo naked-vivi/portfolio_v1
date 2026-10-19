@@ -82,8 +82,8 @@ export const DATA = {
       location: "Thailand",
       title: "Solution Engineer Intern",
       logoUrl: "/logos/botnoi.svg",
-      start: "Jan 2026",
-      end: "Apr 2026",
+      start: "January 2026",
+      end: "April 2026",
       description:
         "Designed conversation flows and developed chatbots and voicebots to meet customer needs and create engaging user experiences. Focused on clear dialogue, smooth interactions, and helpful responses to make conversations intuitive and effective.",
     },
@@ -95,7 +95,7 @@ export const DATA = {
       degree: "B.Eng. Software Engineering",
       gpa: "3.8",
       logoUrl: "/logos/mfu.svg",
-      start: "Aug 2022",
+      start: "August 2022",
       end: "May 2026",
     },
   ],
@@ -190,6 +190,16 @@ export const DATA = {
     },
   ],
   certificates: [
+    {
+      title: "Botnoi Trainee Program",
+      image: "/certificates/botnoi_certs.png",
+      issuer: "Botnoi Group",
+      date: "April 2026",
+      dateTime: "2026-04",
+      href: "/certificates/botnoi_certs.png",
+      description:
+        "Completed the trainee program with the Chatbot team, designing conversation flows and developing chatbots and voicebots to create clear, intuitive, and engaging customer experiences.",
+    },
     {
       title: "Responsive Web Design",
       image: "/certificates/freecodecamp.svg",
