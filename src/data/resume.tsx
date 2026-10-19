@@ -149,7 +149,7 @@ export const DATA = {
       dates: "",
       description:
         "A pizza ordering app with menu browsing, order customization, and quantity controls. Integrates an ordering API for live pricing and delivery tracking, with Redux managing application state.",
-      technologies: ["React", "React Router", "Redux", "Tailwind CSS", "TypeScript", "API Integration"],
+      technologies: ["React", "React Router", "Redux", "TypeScript", "API Integration"],
       links: [
         {
           type: "Website",
@@ -207,7 +207,7 @@ export const DATA = {
       dateTime: "2025-07",
       href: "https://www.coursera.org/account/accomplishments/badge/S0Am7b44Tc-AJu2-OC3Pcg",
       description:
-        "Used generative AI and effective prompts to create content, generate ideas, and simplify daily tasks. Applied responsible AI practices to recognize bias and reduce potential harm.",
+        "Used AI and clear prompts to create content and simplify tasks. Applied responsible practices to recognize bias and reduce harm.",
     },
   ],
 } as const;
