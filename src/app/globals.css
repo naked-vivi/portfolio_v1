@@ -44,24 +44,24 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --background: #fffafb;
+  --foreground: #3c2530;
+  --card: #fffdfd;
+  --card-foreground: #3c2530;
+  --popover: #fffdfd;
+  --popover-foreground: #3c2530;
+  --primary: #b63260;
+  --primary-foreground: #ffffff;
+  --secondary: #fce8ef;
+  --secondary-foreground: #76334d;
+  --muted: #f9eef2;
+  --muted-foreground: #806572;
+  --accent: #fce2ec;
+  --accent-foreground: #82304e;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: #efd8e1;
+  --input: #efd8e1;
+  --ring: #d45683;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -78,24 +78,24 @@
 }
 
 .dark {
-  --background: oklch(0.18 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: #20171e;
+  --foreground: #faedf3;
+  --card: #2a1d26;
+  --card-foreground: #faedf3;
+  --popover: #2a1d26;
+  --popover-foreground: #faedf3;
+  --primary: #f3a1bf;
+  --primary-foreground: #3a1727;
+  --secondary: #392632;
+  --secondary-foreground: #f8d7e5;
+  --muted: #342530;
+  --muted-foreground: #c5a9b8;
+  --accent: #472a3a;
+  --accent-foreground: #f9dce8;
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --border: #503344;
+  --input: #503344;
+  --ring: #e887ac;
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -252,4 +252,36 @@
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+/* A strawberry-milk cameo for Hello Kitty, with a plum palette after dark. */
+.kitty-cameo {
+  width: 184px;
+  display: flex;
+  justify-content: center;
+}
+
+.kitty-cameo-art {
+  position: relative;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+}
+
+.kitty-heart,
+.kitty-sparkles {
+  position: absolute;
+  pointer-events: none;
+  color: var(--primary);
+}
+
+.kitty-heart {
+  top: 39px;
+  left: 2px;
+  fill: var(--accent);
+  transform: rotate(-18deg);
+}
+
+.kitty-sparkles {
+  top: 15px;
+  right: 3px;
 }
