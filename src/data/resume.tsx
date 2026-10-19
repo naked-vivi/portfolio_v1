@@ -17,7 +17,7 @@ export const DATA = {
     "I'm a junior frontend developer who loves turning ideas into clean, responsive websites.",
   summary:
     "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [earned certificates in responsive web design and AI](/#certificates). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
-  avatarUrl: "/web-app-manifest-512x512.png",
+  avatarUrl: "/favicons/default/web-app-manifest-512x512.png",
   skills: [
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
@@ -81,7 +81,7 @@ export const DATA = {
       badges: [],
       location: "Thailand",
       title: "Solution Engineer Intern",
-      logoUrl: "/botnoi.svg",
+      logoUrl: "/logos/botnoi.svg",
       start: "January 2026",
       end: "April 2026",
       description:
@@ -93,7 +93,7 @@ export const DATA = {
       school: "Mae Fah Luang University",
       href: "https://www.mfu.ac.th",
       degree: "Bachelor's Degree in Software Engineering",
-      logoUrl: "/mfu.svg",
+      logoUrl: "/logos/mfu.svg",
       start: "2022",
       end: "2026",
     },
@@ -118,7 +118,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/placeholder.svg",
+      image: "/images/placeholder.svg",
       video: "",
     },
     {
@@ -140,7 +140,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/placeholder.svg",
+      image: "/images/placeholder.svg",
       video: "",
     },
     {
@@ -162,7 +162,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/placeholder.svg",
+      image: "/images/placeholder.svg",
       video: "",
     },
     {
@@ -184,7 +184,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/placeholder.svg",
+      image: "/images/placeholder.svg",
       video: "",
     },
   ],

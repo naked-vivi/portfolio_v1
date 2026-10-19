@@ -1,6 +1,6 @@
 # Vivian's Minimalist Portfolio
 
-![Preview of Vivian's portfolio](./public/preview.png)
+![Preview of Vivian's portfolio](./public/images/preview.png)
 
 ## Table of Contents
 
