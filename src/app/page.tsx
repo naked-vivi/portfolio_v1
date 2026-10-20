@@ -17,7 +17,7 @@ const BLUR_FADE_DELAY = 0.04;
 const HERO_HIGHLIGHT_ALTERNATE = [
   {
     action: "underline" as const,
-    color: "#a855f7", // purple
+    color: "#a855f7",
     strokeWidth: 2.5,
     padding: 1,
     iterations: 2,
@@ -25,7 +25,7 @@ const HERO_HIGHLIGHT_ALTERNATE = [
   },
   {
     action: "highlight" as const,
-    color: "#fde68a", // previous light yellow color
+    color: "#fde68a",
     strokeWidth: 1.5,
     padding: 2,
     iterations: 1,

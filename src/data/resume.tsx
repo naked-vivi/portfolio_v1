@@ -6,9 +6,10 @@ import { TanstackQuery } from "@/components/ui/svgs/tanstackQuery";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
+import { ClaudeCode, Cloudflare, Redux, Vercel } from "@/components/ui/svgs/brand-icons";
 
 export const DATA = {
-  name: "Vivian ~ Front-End Developer",
+  name: "Vivian ~ Frontend Developer",
   initials: "V",
   url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   location: "San Francisco, CA",
@@ -16,7 +17,7 @@ export const DATA = {
   description:
     "I'm a junior frontend developer who loves turning ideas into clean, responsive websites.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [earned certificates in responsive web design and AI](/#certificates). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "I build web interfaces where performance, typography, and micro-interactions meet. Most of my work goes into refining components with React, Next.js, and shadcn/ui, using agentic coding workflows to turn concepts into clean, production-ready code fast. I'm actively looking for a **Junior Frontend Developer** role, so if you're building cool web products, I'd love to chat over an iced matcha. 🍵✨",
   avatarUrl: "/favicons/default/web-app-manifest-512x512.png",
   skills: [
     { name: "React", icon: ReactLight },
@@ -26,9 +27,13 @@ export const DATA = {
     { name: "Zod", icon: Zod },
     { name: "shadcn/ui", icon: Icons.shadcn },
     { name: "Tailwind CSS", icon: Icons.tailwindcss },
+    { name: "Redux", icon: Redux },
     { name: "Supabase", icon: Icons.supabase },
     { name: "Git", icon: Git },
     { name: "Codex", icon: Icons.openai },
+    { name: "Claude Code", icon: ClaudeCode },
+    { name: "Cloudflare", icon: Cloudflare },
+    { name: "Vercel", icon: Vercel },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -75,7 +80,6 @@ export const DATA = {
         name: "Send Email",
         url: "mailto:pyaephyoeaein@gmail.com",
         icon: Icons.email,
-
         navbar: false,
       },
     },
@@ -91,7 +95,7 @@ export const DATA = {
       start: "January 2026",
       end: "April 2026",
       description:
-        "Designed conversation flows and developed chatbots and voicebots to meet customer needs and create engaging user experiences. Focused on clear dialogue, smooth interactions, and helpful responses to make conversations intuitive and effective.",
+        "Developed conversational AI and voicebot solutions for healthcare and education using prompt engineering and Google Apps Script APIs. Designed clinical triage flows, built an interactive virtual patient prototype featured in company showcases, and conducted extensive manual testing across all user conversation journeys.",
     },
   ],
   education: [
@@ -173,21 +177,21 @@ export const DATA = {
       video: "",
     },
     {
-      title: "React Quiz",
-      href: "https://github.com/naked-vivi/react-quiz",
+      title: "Quizzone",
+      href: "https://quizzone.vivianaein.dev",
       dates: "",
       description:
-        "A timed quiz with 15 random React questions, a 30 second limit per question, and a final score when the session ends. Uses Context API and useReducer to manage quiz state, with local storage for persistence.",
-      technologies: ["React", "TypeScript", "Context API", "useReducer", "Local Storage"],
+        "An AI-powered learning and assessment app that turns study notes into quizzes using Groq. Features custom JSON imports with schema validation, interactive test sessions, and client-side score tracking.",
+      technologies: ["React", "TypeScript", "Context API", "AI/SDK", "Zod", "Local Storage"],
       links: [
         {
           type: "Website",
-          href: "https://github.com/naked-vivi/react-quiz",
+          href: "https://quizzone.vivianaein.dev",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/naked-vivi/react-quiz",
+          href: "https://github.com/naked-vivi/quizzone",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -204,7 +208,7 @@ export const DATA = {
       dateTime: "2026-04",
       href: "/certificates/botnoi_certs.png",
       description:
-        "Completed the trainee program with the Chatbot team, designing conversation flows and developing chatbots and voicebots to create clear, intuitive, and engaging customer experiences.",
+        "Completed the Chatbot Solutions Engineer training program, designing conversational logic and voicebot prototypes with prompt engineering, symptom-assessment flows, and API integrations.",
     },
     {
       title: "Responsive Web Design",
