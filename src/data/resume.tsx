@@ -110,71 +110,71 @@ export const DATA = {
     },
   ],
   projects: [
+    // {
+    //   title: "TWO Web",
+    //   href: "https://github.com/naked-vivi/the-wild-oasis-website",
+    //   dates: "",
+    //   description:
+    //     "A cabin booking website with Google sign-in, availability filters, and detailed stay pages. Combines Next.js rendering strategies with Supabase for fast browsing and a smooth booking experience.",
+    //   technologies: ["React", "Next.js", "Tailwind CSS", "Supabase", "NextAuth", "Framer Motion"],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://github.com/naked-vivi/the-wild-oasis-website",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/naked-vivi/the-wild-oasis-website",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/images/placeholder.svg",
+    //   video: "",
+    // },
+    // {
+    //   title: "TWO Dashboard",
+    //   href: "https://github.com/naked-vivi/the-wild-oasis",
+    //   dates: "",
+    //   description:
+    //     "A hotel management dashboard for bookings, check-ins, cabins, and guest records. Features role-based access, filtering, pagination, and charts for revenue and occupancy, with React Query caching to keep data fresh.",
+    //   technologies: ["React", "Supabase", "React Query", "shadcn/ui", "Tailwind CSS", "Recharts"],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://github.com/naked-vivi/the-wild-oasis",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/naked-vivi/the-wild-oasis",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/images/placeholder.svg",
+    //   video: "",
+    // },
     {
-      title: "TWO Web",
-      href: "https://github.com/naked-vivi/the-wild-oasis-website",
+      title: "Verona",
+      href: "https://verona.vivianaein.dev",
       dates: "",
       description:
-        "A cabin booking website with Google sign-in, availability filters, and detailed stay pages. Combines Next.js rendering strategies with Supabase for fast browsing and a smooth booking experience.",
-      technologies: ["React", "Next.js", "Tailwind CSS", "Supabase", "NextAuth", "Framer Motion"],
-      links: [
-        {
-          type: "Website",
-          href: "https://github.com/naked-vivi/the-wild-oasis-website",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/naked-vivi/the-wild-oasis-website",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/images/placeholder.svg",
-      video: "",
-    },
-    {
-      title: "TWO Dashboard",
-      href: "https://github.com/naked-vivi/the-wild-oasis",
-      dates: "",
-      description:
-        "A hotel management dashboard for bookings, check-ins, cabins, and guest records. Features role-based access, filtering, pagination, and charts for revenue and occupancy, with React Query caching to keep data fresh.",
-      technologies: ["React", "Supabase", "React Query", "shadcn/ui", "Tailwind CSS", "Recharts"],
-      links: [
-        {
-          type: "Website",
-          href: "https://github.com/naked-vivi/the-wild-oasis",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/naked-vivi/the-wild-oasis",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/images/placeholder.svg",
-      video: "",
-    },
-    {
-      title: "Fast React Pizza",
-      href: "https://github.com/naked-vivi/fast-pizza",
-      dates: "",
-      description:
-        "A pizza ordering app with menu browsing, order customization, and quantity controls. Integrates an ordering API for live pricing and delivery tracking, with Redux managing application state.",
+        "An Italian pizza ordering application inspired by Verona, featuring real-time order tracking, custom topping pricing, and shareable URL filters. Built with React, TypeScript, and Redux Toolkit with persistent cart sessions.",
       technologies: ["React", "React Router", "Redux", "TypeScript", "API Integration"],
       links: [
         {
           type: "Website",
-          href: "https://github.com/naked-vivi/fast-pizza",
+          href: "https://verona.vivianaein.dev",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/naked-vivi/fast-pizza",
+          href: "https://github.com/naked-vivi/verona",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/images/placeholder.svg",
-      video: "",
+      image: "/images/verona.png",
+      video: "/videos/verona.mp4",
     },
     {
       title: "Quizzone",
@@ -196,7 +196,7 @@ export const DATA = {
         },
       ],
       image: "/images/placeholder.svg",
-      video: "",
+      video: "/videos/quizzone.mp4",
     },
   ],
   certificates: [
