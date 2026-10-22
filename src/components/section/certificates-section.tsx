@@ -2,6 +2,14 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { DATA } from "@/data/resume";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { Timeline, TimelineItem, TimelineConnectItem } from "@/components/timeline";
 
 export default function CertificatesSection() {
@@ -30,13 +38,39 @@ export default function CertificatesSection() {
           {DATA.certificates.map((certificate) => (
             <TimelineItem key={certificate.href} className="w-full flex items-start gap-4 sm:gap-10">
               <TimelineConnectItem className="flex items-start justify-center">
-                <Image
-                  src={certificate.image}
-                  alt={`${certificate.issuer} credential`}
-                  width={40}
-                  height={40}
-                  className="size-10 bg-white z-10 shrink-0 border rounded-full shadow ring-2 ring-border object-contain p-1"
-                />
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button
+                      type="button"
+                      aria-label={`View the ${certificate.title} certificate`}
+                      className="z-10 shrink-0 cursor-zoom-in rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                    >
+                      <Image
+                        src={certificate.image}
+                        alt=""
+                        width={40}
+                        height={40}
+                        className="size-10 bg-white border rounded-full shadow ring-2 ring-border object-contain p-1"
+                      />
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent className="gap-3 p-3 sm:max-w-3xl">
+                    <DialogHeader className="px-1 pt-1 pr-10 text-left">
+                      <DialogTitle>{certificate.title}</DialogTitle>
+                      <DialogDescription>
+                        {certificate.issuer} · {certificate.date}
+                      </DialogDescription>
+                    </DialogHeader>
+                    <Image
+                      src={certificate.certificate.src}
+                      alt={`${certificate.title} certificate from ${certificate.issuer}`}
+                      width={certificate.certificate.width}
+                      height={certificate.certificate.height}
+                      sizes="(min-width: 640px) 768px, 100vw"
+                      className="h-auto max-h-[75vh] w-full rounded-md border object-contain"
+                    />
+                  </DialogContent>
+                </Dialog>
               </TimelineConnectItem>
               <div className="flex flex-1 flex-col gap-2 min-w-0">
                 <time dateTime={certificate.dateTime} className="text-xs text-muted-foreground">
