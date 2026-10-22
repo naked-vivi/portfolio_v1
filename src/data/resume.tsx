@@ -110,56 +110,56 @@ export const DATA = {
     },
   ],
   projects: [
-    // {
-    //   title: "TWO Web",
-    //   href: "https://github.com/naked-vivi/the-wild-oasis-website",
-    //   dates: "",
-    //   description:
-    //     "A cabin booking website with Google sign-in, availability filters, and detailed stay pages. Combines Next.js rendering strategies with Supabase for fast browsing and a smooth booking experience.",
-    //   technologies: ["React", "Next.js", "Tailwind CSS", "Supabase", "NextAuth", "Framer Motion"],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://github.com/naked-vivi/the-wild-oasis-website",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/naked-vivi/the-wild-oasis-website",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/images/placeholder.svg",
-    //   video: "",
-    // },
-    // {
-    //   title: "TWO Dashboard",
-    //   href: "https://github.com/naked-vivi/the-wild-oasis",
-    //   dates: "",
-    //   description:
-    //     "A hotel management dashboard for bookings, check-ins, cabins, and guest records. Features role-based access, filtering, pagination, and charts for revenue and occupancy, with React Query caching to keep data fresh.",
-    //   technologies: ["React", "Supabase", "React Query", "shadcn/ui", "Tailwind CSS", "Recharts"],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://github.com/naked-vivi/the-wild-oasis",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/naked-vivi/the-wild-oasis",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/images/placeholder.svg",
-    //   video: "",
-    // },
+    {
+      title: "Hotel del Luna",
+      href: "https://hoteldelluna-console.vivianaein.dev",
+      dates: "",
+      description:
+        "A hotel management console that helps front desk staff manage bookings, cabins, and their guests, handle check-ins and check-outs, and track revenue and occupancy, so the whole team runs the hotel from one shared place.",
+      technologies: ["React", "Tanstack Query", "shadcn/ui", "Tailwind CSS", "Supabase", "Recharts"],
+      links: [
+        {
+          type: "Website",
+          href: "https://hoteldelluna-console.vivianaein.dev",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/naked-vivi/hotel-del-luna-console",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/placeholder.svg",
+      video: "/videos/hotel-del-luna.mp4",
+    },
+    {
+      title: "Portfolio v1",
+      href: "https://vivianaein.dev",
+      dates: "",
+      description:
+        "My personal portfolio, showcasing my skills, experience, and the projects I've built. One place for teams and recruiters to get to know me, see my work, and reach out about frontend developer roles.",
+      technologies: ["Next.js", "Tailwind CSS", "shadcn/ui", "Magic UI", "Framer Motion"],
+      links: [
+        {
+          type: "Website",
+          href: "https://vivianaein.dev",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/naked-vivi/portfolio_v1",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/placeholder.svg",
+      video: "/videos/portfolio.mp4",
+    },
     {
       title: "Verona",
       href: "https://verona.vivianaein.dev",
       dates: "",
       description:
-        "An Italian pizza ordering application inspired by Verona, featuring real-time order tracking, custom topping pricing, and shareable URL filters. Built with React, TypeScript, and Redux Toolkit with persistent cart sessions.",
+        "An online ordering app for an Italian pizzeria, where customers can browse the menu, pick extra toppings to make each pizza their own, check out in just a few taps, and track their order from the oven all the way to the door.",
       technologies: ["React", "React Router", "Redux", "TypeScript", "API Integration"],
       links: [
         {
@@ -203,6 +203,7 @@ export const DATA = {
     {
       title: "Botnoi Trainee Program",
       image: "/certificates/botnoi_certs.png",
+      certificate: { src: "/certificates/botnoi_certs.png", width: 2420, height: 1744 },
       issuer: "Botnoi Group",
       date: "April 2026",
       dateTime: "2026-04",
@@ -213,6 +214,7 @@ export const DATA = {
     {
       title: "Responsive Web Design",
       image: "/certificates/freecodecamp.svg",
+      certificate: { src: "/certificates/rwd.png", width: 1626, height: 1080 },
       issuer: "freeCodeCamp",
       date: "February 2026",
       dateTime: "2026-02",
@@ -223,6 +225,7 @@ export const DATA = {
     {
       title: "Google AI Essentials",
       image: "/certificates/google-ai-essentials.png",
+      certificate: { src: "/certificates/gae.png", width: 2326, height: 1798 },
       issuer: "Google via Coursera",
       date: "July 2025",
       dateTime: "2025-07",
