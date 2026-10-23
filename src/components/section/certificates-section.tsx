@@ -77,18 +77,7 @@ export default function CertificatesSection() {
                   {certificate.date}
                 </time>
                 <h3 className="font-semibold leading-snug">
-                  <Link
-                    href={certificate.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group/certificate inline-flex items-center gap-2 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                  >
-                    {certificate.title}
-                    <ArrowUpRight
-                      className="size-3.5 shrink-0 text-muted-foreground opacity-0 -translate-x-2 group-hover/certificate:opacity-100 group-hover/certificate:translate-x-0 group-focus-visible/certificate:opacity-100 group-focus-visible/certificate:translate-x-0 transition-all duration-200 motion-reduce:transition-none"
-                      aria-hidden="true"
-                    />
-                  </Link>
+                  {certificate.title}
                 </h3>
                 <p className="text-sm text-muted-foreground">{certificate.issuer}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed wrap-break-word">
