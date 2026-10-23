@@ -42,7 +42,7 @@ export default function ScrollTopBtn({
       aria-hidden={!showBtn}
       tabIndex={showBtn ? 0 : -1}
       className={cn(
-        "fixed bottom-24 right-5 z-40 size-9 cursor-pointer rounded-lg bg-primary text-primary-foreground shadow-md transition-all duration-200 ease-in-out hover:bg-primary/90 motion-reduce:transition-none motion-reduce:translate-y-0 sm:bottom-5",
+        "fixed bottom-24 right-5 z-40 size-9 cursor-pointer rounded-full bg-primary text-primary-foreground shadow-md transition-all duration-200 ease-in-out hover:bg-primary/90 motion-reduce:transition-none motion-reduce:translate-y-0 sm:bottom-5",
         showBtn
           ? "opacity-100 translate-y-0 pointer-events-auto"
           : "opacity-0 translate-y-10 pointer-events-none"

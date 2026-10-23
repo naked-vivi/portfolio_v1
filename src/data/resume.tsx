@@ -160,7 +160,7 @@ export const DATA = {
       dates: "",
       description:
         "An online ordering app for an Italian pizzeria, where customers can browse the menu, pick extra toppings to make each pizza their own, check out in just a few taps, and track their order from the oven all the way to the door.",
-      technologies: ["React", "React Router", "Redux", "TypeScript", "API Integration"],
+      technologies: ["React", "React Router", "Tailwind CSS", "Redux", "TypeScript", "API Integration"],
       links: [
         {
           type: "Website",
