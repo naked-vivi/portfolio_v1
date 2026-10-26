@@ -21,6 +21,7 @@ import {
 import { DATA } from "@/data/resume";
 import { FileDown } from "lucide-react";
 import Image from "next/image";
+import resumeImage from "../../public/images/resume.png";
 
 export default function Navbar() {
   return (
@@ -59,10 +60,9 @@ export default function Navbar() {
                     </DialogDescription>
                   </DialogHeader>
                   <Image
-                    src="/images/resume.png"
+                    src={resumeImage}
                     alt="Vivian&apos;s resume"
-                    width={1278}
-                    height={1816}
+                    placeholder="blur"
                     sizes="(min-width: 640px) 768px, 100vw"
                     className="h-auto max-h-[75vh] w-full rounded-md border object-contain"
                   />
